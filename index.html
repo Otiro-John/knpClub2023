@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDSC WEB</title>
+    <link rel="stylesheet" href="g.css">
+</head>
+<body>
+   <!-----------HEADER-------> 
+   <nav class="navbar">
+    <div class="inner-width">
+        <h2>Google Developers</h2>
+    <button class="menu-toggler ">
+   <span></span>  
+   <span></span>  
+   <span></span>  
+   </button>    
+   <div class="navbar-menu">
+   <a href="#home">Home</a>    
+   <a href="#about">About Us</a>     
+   <a href="#aim">Slogan</a>  
+   <a href="#photo">Photos</a>
+   </div>    
+             
+   </div>    
+   </nav>   
+<!-------Home-------->
+<section id="home">
+<div class="home">
+<h2>Kabete National Polytechnic</h2>
+<h3>Google
+     Developers Students Club</h3>
+<button class="join"><a href="https://chat.whatsapp.com/lxPrGskuFwN4oWuWBl3dMO">Join Us</a></button>
+</div>
+</section>
+
+<!-----About----->
+<section id="about" class="section">
+<h2 class="title">About Us</h2>
+<div class="about" id="main">
+<div class="img">
+<img src="images/aboutus.png" alt="">
+</div>
+<div class="text">
+<p>We are a team that enjoys learning new technologies and sharing our experiences with those who are curious
+about the world of tech.
+</p>
+</div>
+</div>
+</section>
+<!------Aim------->
+<section id="aim" class="section">
+<h2 class="title">OUR Motto</h2>
+<div class="aim" id="main">
+<div class="card">
+<img src="images/learn.png">
+<h3>Learning</h3>
+</div>
+<div class="card">
+    <img src="images/grow.png">
+    <h3>Growing</h3>
+    </div>
+    <div class="card">
+        <img src="images/connect.png" alt="">
+        <h3>Connecting</h3>
+        </div>
+</div>
+</section>
+<!----------Photos-------->
+<section id="photo" class="section">
+<h2 class="title">Gallery</h2>
+<div class="photos" >
+<img src="images/1.jpg">
+<img src="images/2.jpg">
+<img src="images/3.jpg">
+<img src="images/4.jpg">
+<img src="images/5.jpg">
+<img src="images/6.jpg">
+</div>
+</section>
+<!-----------footeer------->
+<section id="section">
+    <div class="footer">
+        <h2>Our Lead:Kibet Wycliffe</h2>
+        <p>Contact Our Lead:0719510335</p>
+        <p>&copy;Copywrite 2023</p>
+    </div>
+</section>
+<script>
+    var navbar = document.querySelector(".navbar");
+    window.onscroll=function(){
+    if(this.scrollY > 20){
+    navbar.classList.add("sticky");
+    }
+    else{
+     navbar.classList.remove("sticky");
+    }
+    }
+    var list = document.querySelector(".navbar-menu");
+    var menu = document.querySelector(".menu-toggler");
+    menu.addEventListener("click",function(){
+     this.classList.toggle("active");
+     list.classList.toggle("active");  
+    });
+        
+    </script>
+</body>
+</html>
